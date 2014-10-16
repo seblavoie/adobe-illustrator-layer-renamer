@@ -12,8 +12,8 @@ The script currently only works with string replacement. Regular expressions wil
 
 Save `ai-layer-renamer.jsx` in your scripts folder.
 
-- Windows: `Program Files\Adobe\Adobe After Effects <version>\Presets\<language>/Scripts`
-- OS X: `/Applications/Illustrator <version>/Presets/<language>/Scripts`
+- Windows: `Program Files\Adobe\Adobe Illustrator <version>\Presets\<language>/Scripts`
+- OS X: `/Applications/Adobe Illustrator <version>/Presets/<language>/Scripts`
 
 ### Option 2
 

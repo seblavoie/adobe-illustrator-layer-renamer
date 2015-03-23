@@ -2,12 +2,18 @@
 
 class LayerRenamer
   constructor: () ->
-    @replacements = [
-        (prompt "What would you like to replace?", "Eg: source"),
-        (prompt "What would you like to replace it with?", "Eg: replacement")
-    ]
 
-    @renameLayers app.activeDocument.selection
+    if app.activeDocument.selection.length > 0
+
+      @replacements = [
+          (prompt "What would you like to replace?", "Eg: source"),
+          (prompt "What would you like to replace it with?", "Eg: replacement")
+      ]
+
+      @renameLayers app.activeDocument.selection
+
+    else
+      alert "Select the layers you would like to be renamed."
 
   renameLayers: (layers) ->
     for layer in layers

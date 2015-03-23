@@ -4,8 +4,12 @@ var LayerRenamer, layerRenamer;
 
 LayerRenamer = (function() {
   function LayerRenamer() {
-    this.replacements = [prompt("What would you like to replace?", "Eg: source"), prompt("What would you like to replace it with?", "Eg: replacement")];
-    this.renameLayers(app.activeDocument.selection);
+    if (app.activeDocument.selection.length > 0) {
+      this.replacements = [prompt("What would you like to replace?", "Eg: source"), prompt("What would you like to replace it with?", "Eg: replacement")];
+      this.renameLayers(app.activeDocument.selection);
+    } else {
+      alert("Select the layers you would like to be renamed.");
+    }
   }
 
   LayerRenamer.prototype.renameLayers = function(layers) {
@@ -13,7 +17,7 @@ LayerRenamer = (function() {
     _results = [];
     for (_i = 0, _len = layers.length; _i < _len; _i++) {
       layer = layers[_i];
-      layer = layer.parent;
+      // layer = layer.parent;
       name = layer.name;
       _results.push(layer.name = name.replace(this.replacements[0], this.replacements[1]));
     }

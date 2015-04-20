@@ -1,5 +1,3 @@
-`#target "illustrator-18"`
-
 class LayerRenamer
   constructor: () ->
 

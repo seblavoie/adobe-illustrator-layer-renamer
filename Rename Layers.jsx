@@ -17,7 +17,7 @@ LayerRenamer = (function() {
     _results = [];
     for (_i = 0, _len = layers.length; _i < _len; _i++) {
       layer = layers[_i];
-      // layer = layer.parent;
+      layer = layer.parent;
       name = layer.name;
       _results.push(layer.name = name.replace(this.replacements[0], this.replacements[1]));
     }

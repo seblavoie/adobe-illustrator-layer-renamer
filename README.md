@@ -24,3 +24,7 @@ Run it from ExtendScript Toolkit.
 1. Make sure you have [coffeescript](http://coffeescript.org) installed.
 2. Run `cake watch` from the root of folder.
 3. Run `cake build` to output .jsx file.
+ 
+## Troubleshooting
+
+If you experience issues with the script as some people have, check out [this issue](https://github.com/seblavoie/adobe-illustrator-layer-renamer/issues/1#issuecomment-102243191) for an alternative solution by @SheepDomination.

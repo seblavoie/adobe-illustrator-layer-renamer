@@ -27,4 +27,4 @@ Run it from ExtendScript Toolkit.
  
 ## Troubleshooting
 
-If you experience issues with the script as some people have, check out [this issue](https://github.com/seblavoie/adobe-illustrator-layer-renamer/issues/1#issuecomment-102243191) for an alternative solution by @SheepDomination.
+If you experience issues with the script as some people have, check out [this issue](https://github.com/seblavoie/adobe-illustrator-layer-renamer/issues/1#issuecomment-102243191) for an alternative solution by [SheepDomination](https://github.com/SheepDomination).
